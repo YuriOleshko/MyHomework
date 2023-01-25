@@ -14,3 +14,4 @@ last_num = after % 10
 after = after // 10
 inference = inference * 10 + last_num
 print(inference)
+
