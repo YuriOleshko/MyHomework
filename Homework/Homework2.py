@@ -1,11 +1,13 @@
 num = int(input('Введите 4-х значное число: '))
-inference = num // 1000
-after = num % 1000
+inference = num % 10
+after = num // 10
 print(inference)
-inference = after // 100
-after = after % 100
+inference = after % 10
+after = after // 10
 print(inference)
-inference = after // 10
-after = after % 10
+inference = after % 10
+after = after // 10
 print(inference)
-print(after)
+inference = after % 10
+after = after // 10
+print(inference)
