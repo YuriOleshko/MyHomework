@@ -1,5 +1,5 @@
-num_one = int(input('Введите первое число: \n'))
-num_two = int(input('Введите второе число: \n'))
+num_one = float(input('Введите первое число: \n'))
+num_two = float(input('Введите второе число: \n'))
 operation = int(input('Выберите номер операции , где: \n1 это (+) \n2 это (-) \n3 это (*) \n4 это (/) \n'))
 
 if operation == 1:
