@@ -1,14 +1,13 @@
 import keyword
 import string
 
-punkt = list(string.punctuation)
-index = punkt.index('_')
-punkt[index] = ' '
+punkt = string.punctuation
+punkt1 = punkt.replace('_', ' ')
 txt = input("Введите имя предпологаемой переменной: \n")
 if not keyword.iskeyword(txt):
     if not txt[0].isnumeric():
         for i in txt:
-            if i.isupper() or i in punkt:
+            if i.isupper() or i in punkt1:
                 print("False")
                 break
         else:
